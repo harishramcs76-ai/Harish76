@@ -1,297 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Travel Planner — Presentation</title>
-  <style>
-    :root{
-      --bg:#0b1220;
-      --card:#0f1724;
-      --accent:#3ddc97;
-      --muted:#9aa6bf;
-      --txt:#e6eef8;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-    }
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%,#07182a 60%);color:var(--txt)}
-    .deck{height:100vh;display:flex;align-items:center;justify-content:center;padding:30px;box-sizing:border-box}
-    .slide{
-      width:1200px; max-width:100%; height:720px; max-height:100%;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:14px; padding:40px; box-sizing:border-box;
-      box-shadow: 0 20px 50px rgba(2,6,15,0.7);
-      position:relative; overflow:hidden;
-      display:none; flex-direction:column; gap:18px;
-    }
-    .slide.active{display:flex}
-    .title{font-size:40px; font-weight:700; margin:0}
-    .subtitle{color:var(--muted); font-size:16px; margin-top:6px}
-    .meta{display:flex; gap:18px; color:var(--muted); font-size:14px; margin-top:12px}
-    .cols{display:flex; gap:24px; align-items:flex-start}
-    .col{flex:1}
-    ul{margin:8px 0 0 18px; color:var(--txt)}
-    .footer{position:absolute; bottom:18px; left:40px; right:40px; display:flex; justify-content:space-between; color:var(--muted); font-size:13px}
-    .nav{
-      position:absolute; top:50%; transform:translateY(-50%); width:100%;
-      display:flex; justify-content:space-between; pointer-events:none;
-    }
-    .nav button{pointer-events:auto; background:transparent; border:none; font-size:40px; color:rgba(230,238,248,0.15); width:110px; height:120px; cursor:pointer}
-    .nav button:hover{color:rgba(230,238,248,0.35)}
-    .big{font-size:28px; font-weight:700}
-    .small{font-size:14px; color:var(--muted)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03); color:var(--muted); font-weight:600}
-    .screenshot-placeholder{height:300px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px dashed rgba(255,255,255,0.03)}
-    a.link{color:var(--accent); font-weight:700; text-decoration:none}
-    /* responsive tweaks */
-    @media (max-width:900px){
-      .cols{flex-direction:column}
-    }
-  </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <div class="deck">
-    <!-- Slide 1: Title -->
-    <section class="slide active" aria-label="Slide 1 - Title">
-      <div>
-        <div style="display:flex;align-items:center;gap:16px">
-          <div style="width:70px;height:70px;border-radius:12px;background:linear-gradient(135deg,#46d6a6,#2cc7ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042632">TP</div>
-          <div>
-            <h1 class="title">Travel Planner Website</h1>
-            <div class="subtitle">Digital portfolio / Project presentation</div>
-            <div class="meta">
-              <div><strong>Student:</strong> Harishram S</div>
-              <div><strong>Register No:</strong> 2422K0400</div>
-              <div><strong>Dept:</strong> 2nd BSc CS</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div style="flex:1;display:flex;align-items:center;justify-content:center">
-        <div style="text-align:center">
-          <div class="big">Project Title</div>
-          <div style="font-size:20px;margin-top:8px">Travel Planner Website</div>
-          <div style="margin-top:14px" class="small">A web-based travel planner that provides personalized itineraries, destination insights, and booking assistance.</div>
-        </div>
-      </div>
+    <!-- Header -->
 
-      <div class="footer">
-        <div>United College of Arts and Science</div>
-        <div>3/21/2024 — Annual Review</div>
-      </div>
-    </section>
+    <header>
 
-    <!-- Slide 2: Agenda -->
-    <section class="slide" aria-label="Slide 2 - Agenda">
-      <div>
-        <h2 class="title">Agenda</h2>
-        <div class="cols" style="margin-top:12px">
-          <div class="col">
-            <ul>
-              <li>Problem Statement</li>
-              <li>Project Overview</li>
-              <li>End Users</li>
-              <li>Tools & Technologies</li>
+        <nav>
+
+            <h1>My Portfolio</h1>
+
+            <ul id="nav-links">
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
             </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>Portfolio Design & Layout</li>
-              <li>Features & Functionality</li>
-              <li>Results & Screenshots</li>
-              <li>Conclusion & GitHub Link</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="footer">
-        <div class="small">Travel Planner — Presentation</div>
-        <div class="small">Use ← / → keys to navigate</div>
-      </div>
+        </nav>
+
+    </header>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>Hello! I am a student passionate about coding, web development, and problem solving. 
+
+           I enjoy learning new technologies and building creative projects.</p>
+
     </section>
 
-    <!-- Slide 3: Problem Statement -->
-    <section class="slide" aria-label="Slide 3 - Problem">
-      <h2 class="title">Problem Statement</h2>
-      <p class="small" style="margin-top:12px; max-width:900px">
-        Travel planning is often time-consuming and confusing due to scattered information, lack of personalization, and difficulty in comparing options.
-      </p>
+    <!-- Skills Section -->
 
-      <div style="margin-top:18px">
-        <div class="badge">Why it matters</div>
-        <ul style="margin-top:10px">
-          <li>Users waste time visiting multiple sites.</li>
-          <li>Options are hard to compare (price, duration, amenities).</li>
-          <li>No simple way to create/share personalized itineraries.</li>
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <ul class="skills-list">
+
+            <li>HTML & CSS</li>
+
+            <li>JavaScript</li>
+
+            <li>C++ / Java</li>
+
+            <li>Python</li>
+
+            <li>Communication Skills</li>
+
         </ul>
-      </div>
 
-      <div class="footer">
-        <div class="small">Problem statement pulled from project notes</div>
-        <div class="small">Slide 3 of 8</div>
-      </div>
     </section>
 
-    <!-- Slide 4: Project Overview & End Users -->
-    <section class="slide" aria-label="Slide 4 - Overview">
-      <h2 class="title">Project Overview</h2>
-      <div class="cols" style="margin-top:12px">
-        <div class="col">
-          <p class="small">A web-based travel planner that provides personalized itineraries, destination insights, and booking assistance to make travel planning easier.</p>
+    <!-- Projects Section -->
 
-          <h3 style="margin-top:14px;margin-bottom:6px">End Users</h3>
-          <ul>
-            <li>Tourists & Travelers</li>
-            <li>Travel Agencies</li>
-            <li>Frequent Business Travelers</li>
-            <li>Students planning trips</li>
-          </ul>
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Naan Mudhalvan</h3>
+
+            <p>A learning platform project completed as part of my academic journey.</p>
+
         </div>
 
-        <div class="col">
-          <h3 style="margin:0 0 8px 0">Tools & Techniques</h3>
-          <ul>
-            <li>Frontend: HTML, CSS, JavaScript, React</li>
-            <li>Backend: Node.js, Express.js</li>
-            <li>Database: MongoDB</li>
-            <li>APIs: Google Maps, Weather API</li>
-            <li>Hosting: GitHub Pages / Netlify</li>
-          </ul>
-        </div>
-      </div>
+        <div class="project-card">
 
-      <div class="footer">
-        <div class="small">Details taken from project PPT.</div>
-        <div class="small">Slide 4 of 8</div>
-      </div>
+            <h3>IBM Fundamentals of Web</h3>
+
+            <p>Completed an IBM course and created web applications using HTML, CSS, and JS.</p>
+
+        </div>
+
     </section>
 
-    <!-- Slide 5: Design & Features -->
-    <section class="slide" aria-label="Slide 5 - Design & Features">
-      <h2 class="title">Portfolio Design & Features</h2>
-      <div class="cols" style="margin-top:12px">
-        <div class="col">
-          <h3 style="margin:0 0 8px 0">Design</h3>
-          <ul>
-            <li>Responsive UI/UX</li>
-            <li>Simple navigation bar</li>
-            <li>Destination search & filters</li>
-            <li>Interactive maps</li>
-            <li>Itinerary builder interface</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3 style="margin:0 0 8px 0">Features & Functionality</h3>
-          <ul>
-            <li>User authentication</li>
-            <li>Search destinations & hotels</li>
-            <li>Weather forecast integration</li>
-            <li>AI-based itinerary suggestions</li>
-            <li>Budget and time optimization</li>
-            <li>Save & share trips</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Contact Section -->
 
-      <div class="footer">
-        <div class="small">Slide 5 of 8</div>
-        <div class="small">Interactive prototype + screenshots next</div>
-      </div>
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: harihamcs76@gmail.com</p>
+
+        <button id="contactBtn">Say Hello 👋</button>
+
     </section>
 
-    <!-- Slide 6: Results / Screenshots -->
-    <section class="slide" aria-label="Slide 6 - Results">
-      <h2 class="title">Results & Screenshots</h2>
-      <div style="margin-top:12px">
-        <div class="screenshot-placeholder">
-          Prototype screenshots: Homepage | Destination search | Itinerary builder | Saved trips dashboard
-        </div>
-        <div class="small" style="margin-top:12px">
-          (Add actual screenshots here — replace placeholder with images or embed thumbnails.)
-        </div>
-      </div>
+    <footer>
 
-      <div class="footer">
-        <div class="small">Slide 6 of 8</div>
-        <div class="small">Prototype screenshots are part of the deliverables.</div>
-      </div>
-    </section>
+        <p>© 2025 Student Portfolio | All Rights Reserved</p>
 
-    <!-- Slide 7: Conclusion -->
-    <section class="slide" aria-label="Slide 7 - Conclusion">
-      <h2 class="title">Conclusion</h2>
-      <p class="small" style="margin-top:12px; max-width:900px">
-        The travel planner website provides a user-friendly, customizable platform that simplifies travel planning and enhances user experience.
-      </p>
+    </footer>
 
-      <div style="margin-top:18px">
-        <ul>
-          <li>Improves planning efficiency</li>
-          <li>Enables comparisons and personalization</li>
-          <li>Supports saving and sharing of itineraries</li>
-        </ul>
-      </div>
+    <script src="script.js"></script>
 
-      <div class="footer">
-        <div class="small">Slide 7 of 8</div>
-        <div class="small">Thanks — Questions?</div>
-      </div>
-    </section>
-
-    <!-- Slide 8: GitHub Link -->
-    <section class="slide" aria-label="Slide 8 - GitHub">
-      <h2 class="title">GitHub Link</h2>
-      <div style="margin-top:18px">
-        <p class="big">Project Repository</p>
-        <p class="small" style="margin-top:8px">View the project code & assets here:</p>
-        <p style="margin-top:12px"><a class="link" href="https://github.com/manoj48905" target="_blank" rel="noopener">https://github.com/manoj48905</a></p>
-      </div>
-
-      <div class="footer">
-        <div class="small">Slide 8 of 8</div>
-        <div class="small">Presented by: S. Manoj Kumar</div>
-      </div>
-    </section>
-
-    <!-- navigation -->
-    <div class="nav" aria-hidden="true">
-      <button id="prevBtn" title="Previous (←)">❮</button>
-      <button id="nextBtn" title="Next (→)">❯</button>
-    </div>
-
-  </div>
-
-  <script>
-    // Basic slide navigation
-    const slides = Array.from(document.querySelectorAll('.slide'));
-    let idx = 0;
-    const show = i => {
-      slides.forEach(s => s.classList.remove('active'));
-      slides[i].classList.add('active');
-      // ensure focus for keyboard users
-      slides[i].focus();
-    };
-    document.getElementById('prevBtn').addEventListener('click', ()=>{
-      idx = (idx - 1 + slides.length) % slides.length; show(idx);
-    });
-    document.getElementById('nextBtn').addEventListener('click', ()=>{
-      idx = (idx + 1) % slides.length; show(idx);
-    });
-    // keyboard navigation
-    document.addEventListener('keydown', e => {
-      if(e.key === 'ArrowRight') { idx = (idx + 1) % slides.length; show(idx); }
-      if(e.key === 'ArrowLeft') { idx = (idx - 1 + slides.length) % slides.length; show(idx); }
-      if(e.key === 'Home') { idx = 0; show(idx); }
-      if(e.key === 'End') { idx = slides.length - 1; show(idx); }
-    });
-
-    // click left/right half to navigate (mobile-friendly)
-    document.querySelector('.deck').addEventListener('click', e => {
-      const w = window.innerWidth;
-      if(e.clientX < w*0.25) { idx = (idx - 1 + slides.length) % slides.length; show(idx); }
-      else if(e.clientX > w*0.75) { idx = (idx + 1) % slides.length; show(idx); }
-    });
-  </script>
 </body>
+
 </html>
